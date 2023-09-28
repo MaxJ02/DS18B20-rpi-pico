@@ -45,7 +45,9 @@ import main.py
 
 The console should repeatedly display the unique id of the Raspberry Pi Pico, the sensor's id, and the temperature read from the sensor in the following format:
 
+
 <pico_id> <sensor_id> <temperature>
+
 
 ### Troubleshooting 🛠️
 
