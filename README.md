@@ -1,6 +1,6 @@
 # Raspberry Pi Pico Temperature Sensor
 
-This project utilizes a Raspberry Pi Pico to read temperature data from a DS18x20 temperature sensor and print the readings to the console. The pin number for the sensor and the time interval for readings can be customized via a `config.json` file.
+This project utilizes a Raspberry Pi Pico to read temperature data from a DS18x20 temperature sensor and print the readings to the console. The pin number for the sensor and the time interval for readings can be customized via the `config.json` file.
 
 ## 🛠️ Requirements
 
@@ -14,8 +14,8 @@ This project utilizes a Raspberry Pi Pico to read temperature data from a DS18x2
   
 ## 📁 File Structure
 
-- `temp_sensor.py` - The main Python script to run.
-- `config.json` - (Optional) A configuration file to set up the pin and interval for readings.
+- `main.py`     - The main Python script to run.
+- `config.json` -  A configuration file to set up the pin and interval for readings.
 
 ## 🚀 Getting Started
 
@@ -29,22 +29,17 @@ Connect the DS18x20 temperature sensor to the correct GPIO pin as per the sensor
 
 ### 3. Upload the Files
 
-- Create a `temp_sensor.py` file and copy the provided code into this file.
-- Optionally, create a `config.json` file with the pin number and interval:
-
-{
-  "pin": 16,
-  "interval": 9
-}
+- Create a `main.py` file and copy the provided code into this file.
+- Secondly, create a `config.json` file with the desired pin number and interval:
 
 
-    Transfer both the temp_sensor.py and config.json files to your Raspberry Pi Pico.
+    Transfer both the main.py and config.json files to your Raspberry Pi Pico.
 
 ### 4. Running the Script
 
 After uploading the files, navigate to the Python file via Thonny Python IDE or run the following command in the REPL prompt:
 
-import temp_sensor
+import main.py
 
 ## Expected Output 📈
 
@@ -55,6 +50,6 @@ The console should repeatedly display the unique id of the Raspberry Pi Pico, th
 ### Troubleshooting 🛠️
 
     Verify that the sensor is securely and correctly connected.
-    Ensure config.json is in the correct format and located in the same directory as temp_sensor.py.
+    Ensure config.json is in the correct format and located in the same directory as main.py.
     Confirm the availability of all required libraries in your MicroPython environment.
     Update your MicroPython firmware if encountering any errors or discrepancies in displayed ids.
