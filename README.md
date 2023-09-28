@@ -31,3 +31,30 @@ Connect the DS18x20 temperature sensor to the correct GPIO pin as per the sensor
 
 - Create a `temp_sensor.py` file and copy the provided code into this file.
 - Optionally, create a `config.json` file with the pin number and interval:
+
+{
+  "pin": 16,
+  "interval": 9
+}
+
+
+    Transfer both the temp_sensor.py and config.json files to your Raspberry Pi Pico.
+
+### 4. Running the Script
+
+After uploading the files, navigate to the Python file via Thonny Python IDE or run the following command in the REPL prompt:
+
+import temp_sensor
+
+## Expected Output 📈
+
+The console should repeatedly display the unique id of the Raspberry Pi Pico, the sensor's id, and the temperature read from the sensor in the following format:
+
+<pico_id> <sensor_id> <temperature>
+
+### Troubleshooting 🛠️
+
+    Verify that the sensor is securely and correctly connected.
+    Ensure config.json is in the correct format and located in the same directory as temp_sensor.py.
+    Confirm the availability of all required libraries in your MicroPython environment.
+    Update your MicroPython firmware if encountering any errors or discrepancies in displayed ids.
