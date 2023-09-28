@@ -25,7 +25,7 @@ Ensure MicroPython is installed on your Raspberry Pi Pico. Follow the instructio
 
 ### 2. Connect the DS18x20 Sensor
 
-Connect the DS18x20 temperature sensor to the correct GPIO pin as per the sensor's datasheet or refering to the picture below:
+Connect one or several DS18x20 temperature sensor(s) to the correct GPIO pin as per the sensor's datasheet or refering to the picture below:
 ![TEST](images/wiring_diagram.png)
 
 ### 3. Upload the Files
